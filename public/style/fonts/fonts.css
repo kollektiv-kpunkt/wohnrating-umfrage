@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Clinton';
+    src: url('Clinton-Bold.eot'); /* IE9 Compat Modes */
+    src: url('Clinton-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Clinton-Bold.woff') format('woff'), /* Modern Browsers */
+         url('Clinton-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Clinton-Bold.svg#Clinton-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Clinton';
+    src: url('Clinton-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('Clinton-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Clinton-BoldItalic.woff') format('woff'), /* Modern Browsers */
+         url('Clinton-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Clinton-BoldItalic.svg#Clinton-BoldItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Clinton';
+    src: url('Clinton-ExtraBold.eot'); /* IE9 Compat Modes */
+    src: url('Clinton-ExtraBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Clinton-ExtraBold.woff') format('woff'), /* Modern Browsers */
+         url('Clinton-ExtraBold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Clinton-ExtraBold.svg#Clinton-ExtraBold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 800;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Clinton';
+    src: url('Clinton-ExtraBoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('Clinton-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Clinton-ExtraBoldItalic.woff') format('woff'), /* Modern Browsers */
+         url('Clinton-ExtraBoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Clinton-ExtraBoldItalic.svg#Clinton-ExtraBoldItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: 800;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Clinton';
+    src: url('Clinton-SemiBold.eot'); /* IE9 Compat Modes */
+    src: url('Clinton-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Clinton-SemiBold.woff') format('woff'), /* Modern Browsers */
+         url('Clinton-SemiBold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Clinton-SemiBold.svg#Clinton-SemiBold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
