@@ -1,0 +1,11 @@
+{
+    "ID": 1, // Randomly generated ID
+    "name":{
+        "fname":"First name",
+        "lname":"Last Name"
+    },
+    "email":"Email Addres",
+    "partei":"party", // Can be sp, svp, gruene, fdp, glp, mitte, bdp, cvp, evp, undefined (for politicians without a party) or a string containing the full name of some other party
+    "gemeinde":261,
+    "contactStatus":0 // Is 0 if contact Information has not been confirmed, is 1 if it has
+}

@@ -25,38 +25,38 @@ class wohnratingForm {
                 "question" : "Der gemeinnützige Wohnungsbau orientieren sich an der Kostenmiete und wirtschaftet ohne Gewinnabsichten. Ist in Ihrer Gemeinde ein höherer Anteil an gemeinnützigen Wohnungen wünschenswert?",
                 "response" : 0
             },
-            // 4 : {
-            //     "question" : "Würden Sie es befürworten, wenn ihre Gemeinde bei Landverkäufen oder der Einrichtung eines Baurechts prinzipiell gemeinnützige Wohnbauträger berücksichtigt?",
-            //     "response" : 0
-            // },
-            // 5 : {
-            //     "question" : "Wohnbaugenossenschaften bringen einen breiten volkswirtschaftlichen Nutzen, in dem Sie z.B. auf eine gute Belegung der Wohnungen achten, in ökologische Massnahmen investieren und besonders in den Städten auch Familien halten und zu einer guten und stabilen sozialen Durchmischung beitragen. Können Sie dieser Aussage zustimmen?",
-            //     "response" : 0
-            // },
-            // 6 : {
-            //     "question" : "Der Regionalverband Wohnbaugenossenschaften Zürich hat eine kantonale Initiative lanciert, die es den Gemeinden erlauben würde, ein Vorkaufsrecht zu etablieren. Unterstützen Sie diese Initiative?",
-            //     "response" : 0
-            // },
-            // 7 : {
-            //     "question" : "Braucht es künftig ein «Wohnschutzgesetz», das die Mieter*innen vor Leerkündigungen und preistreibenden Renovationen schützt? Ist es Aufgabe der Regierung Anreize zu schaffen, dass Immobilienbesitzer*innen Sanierungen im bewohnten Zustand vornehmen, so dass die Mieter*innen in den Wohnungen bleiben können, oder ein Rückkehrrecht erhalten, nachdem die Wohnungen saniert oder umgebaut wurden?",
-            //     "response" : 0
-            // },
-            // 8 : {
-            //     "question" : "Verschiedene parlamentarische Initiativen zielen darauf ab, die Anfechtung des Anfangsmietzinses zu schwächen indem eine Einschränkung auf persönliche/familiäre Notsituationen und eine Verstärkung der Orts- und Quartierüblichkeit gefordert wird. Unterstützen Sie diese Bestrebungen?",
-            //     "response" : 0
-            // },
-            // 9 : {
-            //     "question" : "Soll der Kündigungsschutz wegen Eigenbedarf vereinfacht werden, damit Eigentümer*innen besser über ihre Liegenschaften verfügen können?",
-            //     "response" : 0
-            // },
-            // 10 : {
-            //     "question" : "Müssen sich ältere Menschen, Personen mit kleinem Budget, vielen Kindern, in Ausbildung etc. insbesondere in den grösseren Städten Sorgen machen, wenn Sie sich auf Wohnungssuche begeben müssen? Sind die Gemeinden gefordert, hier unterstützend einzuschreiten?",
-            //     "response" : 0
-            // },
-            // 11 : {
-            //     "question" : "Erachten Sie es als Aufgabe ihrer Gemeinde, für bezahlbaren Wohnraum für ältere Menschen, Personen mit kleinem Budget, vielen Kindern oder in Ausbildung zu sorgen?",
-            //     "response" : 0
-            // },
+            4 : {
+                "question" : "Würden Sie es befürworten, wenn ihre Gemeinde bei Landverkäufen oder der Einrichtung eines Baurechts prinzipiell gemeinnützige Wohnbauträger berücksichtigt?",
+                "response" : 0
+            },
+            5 : {
+                "question" : "Wohnbaugenossenschaften bringen einen breiten volkswirtschaftlichen Nutzen, in dem Sie z.B. auf eine gute Belegung der Wohnungen achten, in ökologische Massnahmen investieren und besonders in den Städten auch Familien halten und zu einer guten und stabilen sozialen Durchmischung beitragen. Können Sie dieser Aussage zustimmen?",
+                "response" : 0
+            },
+            6 : {
+                "question" : "Der Regionalverband Wohnbaugenossenschaften Zürich hat eine kantonale Initiative lanciert, die es den Gemeinden erlauben würde, ein Vorkaufsrecht zu etablieren. Unterstützen Sie diese Initiative?",
+                "response" : 0
+            },
+            7 : {
+                "question" : "Braucht es künftig ein «Wohnschutzgesetz», das die Mieter*innen vor Leerkündigungen und preistreibenden Renovationen schützt? Ist es Aufgabe der Regierung Anreize zu schaffen, dass Immobilienbesitzer*innen Sanierungen im bewohnten Zustand vornehmen, so dass die Mieter*innen in den Wohnungen bleiben können, oder ein Rückkehrrecht erhalten, nachdem die Wohnungen saniert oder umgebaut wurden?",
+                "response" : 0
+            },
+            8 : {
+                "question" : "Verschiedene parlamentarische Initiativen zielen darauf ab, die Anfechtung des Anfangsmietzinses zu schwächen indem eine Einschränkung auf persönliche/familiäre Notsituationen und eine Verstärkung der Orts- und Quartierüblichkeit gefordert wird. Unterstützen Sie diese Bestrebungen?",
+                "response" : 0
+            },
+            9 : {
+                "question" : "Soll der Kündigungsschutz wegen Eigenbedarf vereinfacht werden, damit Eigentümer*innen besser über ihre Liegenschaften verfügen können?",
+                "response" : 0
+            },
+            10 : {
+                "question" : "Müssen sich ältere Menschen, Personen mit kleinem Budget, vielen Kindern, in Ausbildung etc. insbesondere in den grösseren Städten Sorgen machen, wenn Sie sich auf Wohnungssuche begeben müssen? Sind die Gemeinden gefordert, hier unterstützend einzuschreiten?",
+                "response" : 0
+            },
+            11 : {
+                "question" : "Erachten Sie es als Aufgabe ihrer Gemeinde, für bezahlbaren Wohnraum für ältere Menschen, Personen mit kleinem Budget, vielen Kindern oder in Ausbildung zu sorgen?",
+                "response" : 0
+            },
         }
         this.questionsTotal = Object.keys(this.questions).length
         this.questionNumber = 1
@@ -128,14 +128,18 @@ class wohnratingForm {
             }, 750);
         } else {
             var response = { "politId" : document.getElementById("question-container").getAttribute("data-polit-id"), "questions" : this.questions}
-            console.log(JSON.stringify(response))
             fetch("/umfrage/submit", {
                 method: "POST", 
                 body: JSON.stringify(response)
             }).then(res => {
                 return res.text();
             }).then(text => {
-                console.log(text)
+                text = JSON.parse(text)
+                if (text.code == 200) {
+                    window.location.href="/danke"
+                } else {
+                    alert(text.text)
+                }
             })
         }
     }

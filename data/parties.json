@@ -1,0 +1,47 @@
+[
+    {
+        "slug":"sp",
+        "name":"Sozialdemokratische Partei der Schweiz",
+        "shortname":"SP"
+    },
+    {
+        "slug":"svp",
+        "name":"Schweizerische Volkspartei",
+        "shortname":"SVP"
+    },
+    {
+        "slug":"fdp",
+        "name":"FDP - Die Liberalen.",
+        "shortname":"FDP"
+    },
+    {
+        "slug":"gruene",
+        "name":"Grüne Partei der Schweiz",
+        "shortname":"Grüne"
+    },
+    {
+        "slug":"glp",
+        "name":"Grünliberale Partei",
+        "shortname":"glp"
+    },
+    {
+        "slug":"mitte",
+        "name":"Die Mitte",
+        "shortname":"Mitte"
+    },
+    {
+        "slug":"cvp",
+        "name":"Christlich Demokratische Partei der Schweiz",
+        "shortname":"CVP"
+    },
+    {
+        "slug":"bdp",
+        "name":"Bürgerlich Demokratische Partei",
+        "shortname":"BDP"
+    },
+    {
+        "slug":"fallback",
+        "name":"Parteilos",
+        "shortname":"Parteilos"
+    }
+]

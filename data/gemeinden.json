@@ -1,0 +1,1298 @@
+[
+  {
+    "kant": "ZH",
+    "bezirk": 101,
+    "nr": 1,
+    "name": "Aeugst am Albis",
+    "bazirkname": "Bezirk Affoltern",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 101,
+    "nr": 2,
+    "name": "Affoltern am Albis",
+    "bazirkname": "Bezirk Affoltern",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 101,
+    "nr": 3,
+    "name": "Bonstetten",
+    "bazirkname": "Bezirk Affoltern",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 101,
+    "nr": 4,
+    "name": "Hausen am Albis",
+    "bazirkname": "Bezirk Affoltern",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 101,
+    "nr": 5,
+    "name": "Hedingen",
+    "bazirkname": "Bezirk Affoltern",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 101,
+    "nr": 6,
+    "name": "Kappel am Albis",
+    "bazirkname": "Bezirk Affoltern",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 101,
+    "nr": 7,
+    "name": "Knonau",
+    "bazirkname": "Bezirk Affoltern",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 101,
+    "nr": 8,
+    "name": "Maschwanden",
+    "bazirkname": "Bezirk Affoltern",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 101,
+    "nr": 9,
+    "name": "Mettmenstetten",
+    "bazirkname": "Bezirk Affoltern",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 101,
+    "nr": 10,
+    "name": "Obfelden",
+    "bazirkname": "Bezirk Affoltern",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 101,
+    "nr": 11,
+    "name": "Ottenbach",
+    "bazirkname": "Bezirk Affoltern",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 101,
+    "nr": 12,
+    "name": "Rifferswil",
+    "bazirkname": "Bezirk Affoltern",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 101,
+    "nr": 13,
+    "name": "Stallikon",
+    "bazirkname": "Bezirk Affoltern",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 101,
+    "nr": 14,
+    "name": "Wettswil am Albis",
+    "bazirkname": "Bezirk Affoltern",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 21,
+    "name": "Adlikon",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 22,
+    "name": "Benken (ZH)",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 23,
+    "name": "Berg am Irchel",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 24,
+    "name": "Buch am Irchel",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 25,
+    "name": "Dachsen",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 26,
+    "name": "Dorf",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 27,
+    "name": "Feuerthalen",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 28,
+    "name": "Flaach",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 29,
+    "name": "Flurlingen",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 30,
+    "name": "Andelfingen",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 31,
+    "name": "Henggart",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 32,
+    "name": "Humlikon",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 33,
+    "name": "Kleinandelfingen",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 34,
+    "name": "Laufen-Uhwiesen",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 35,
+    "name": "Marthalen",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 37,
+    "name": "Ossingen",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 38,
+    "name": "Rheinau",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 39,
+    "name": "Thalheim an der Thur",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 40,
+    "name": "Trüllikon",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 41,
+    "name": "Truttikon",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 43,
+    "name": "Volken",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 51,
+    "name": "Bachenbülach",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 52,
+    "name": "Bassersdorf",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 53,
+    "name": "Bülach",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 54,
+    "name": "Dietlikon",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 55,
+    "name": "Eglisau",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 56,
+    "name": "Embrach",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 57,
+    "name": "Freienstein-Teufen",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 58,
+    "name": "Glattfelden",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 59,
+    "name": "Hochfelden",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 60,
+    "name": "Höri",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 61,
+    "name": "Hüntwangen",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 62,
+    "name": "Kloten",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 63,
+    "name": "Lufingen",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 64,
+    "name": "Nürensdorf",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 65,
+    "name": "Oberembrach",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 66,
+    "name": "Opfikon",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 67,
+    "name": "Rafz",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 68,
+    "name": "Rorbas",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 69,
+    "name": "Wallisellen",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 70,
+    "name": "Wasterkingen",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 71,
+    "name": "Wil (ZH)",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 103,
+    "nr": 72,
+    "name": "Winkel",
+    "bazirkname": "Bezirk Bülach",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 81,
+    "name": "Bachs",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 82,
+    "name": "Boppelsen",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 83,
+    "name": "Buchs (ZH)",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 84,
+    "name": "Dällikon",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 85,
+    "name": "Dänikon",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 86,
+    "name": "Dielsdorf",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 87,
+    "name": "Hüttikon",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 88,
+    "name": "Neerach",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 89,
+    "name": "Niederglatt",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 90,
+    "name": "Niederhasli",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 91,
+    "name": "Niederweningen",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 92,
+    "name": "Oberglatt",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 93,
+    "name": "Oberweningen",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 94,
+    "name": "Otelfingen",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 95,
+    "name": "Regensberg",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 96,
+    "name": "Regensdorf",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 97,
+    "name": "Rümlang",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 98,
+    "name": "Schleinikon",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 99,
+    "name": "Schöfflisdorf",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 100,
+    "name": "Stadel",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 101,
+    "name": "Steinmaur",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 104,
+    "nr": 102,
+    "name": "Weiach",
+    "bazirkname": "Bezirk Dielsdorf",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 105,
+    "nr": 111,
+    "name": "Bäretswil",
+    "bazirkname": "Bezirk Hinwil",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 105,
+    "nr": 112,
+    "name": "Bubikon",
+    "bazirkname": "Bezirk Hinwil",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 105,
+    "nr": 113,
+    "name": "Dürnten",
+    "bazirkname": "Bezirk Hinwil",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 105,
+    "nr": 114,
+    "name": "Fischenthal",
+    "bazirkname": "Bezirk Hinwil",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 105,
+    "nr": 115,
+    "name": "Gossau (ZH)",
+    "bazirkname": "Bezirk Hinwil",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 105,
+    "nr": 116,
+    "name": "Grüningen",
+    "bazirkname": "Bezirk Hinwil",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 105,
+    "nr": 117,
+    "name": "Hinwil",
+    "bazirkname": "Bezirk Hinwil",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 105,
+    "nr": 118,
+    "name": "Rüti (ZH)",
+    "bazirkname": "Bezirk Hinwil",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 105,
+    "nr": 119,
+    "name": "Seegräben",
+    "bazirkname": "Bezirk Hinwil",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 105,
+    "nr": 120,
+    "name": "Wald (ZH)",
+    "bazirkname": "Bezirk Hinwil",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 105,
+    "nr": 121,
+    "name": "Wetzikon (ZH)",
+    "bazirkname": "Bezirk Hinwil",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 106,
+    "nr": 131,
+    "name": "Adliswil",
+    "bazirkname": "Bezirk Horgen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 106,
+    "nr": 135,
+    "name": "Kilchberg (ZH)",
+    "bazirkname": "Bezirk Horgen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 106,
+    "nr": 136,
+    "name": "Langnau am Albis",
+    "bazirkname": "Bezirk Horgen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 106,
+    "nr": 137,
+    "name": "Oberrieden",
+    "bazirkname": "Bezirk Horgen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 106,
+    "nr": 138,
+    "name": "Richterswil",
+    "bazirkname": "Bezirk Horgen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 106,
+    "nr": 139,
+    "name": "Rüschlikon",
+    "bazirkname": "Bezirk Horgen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 106,
+    "nr": 141,
+    "name": "Thalwil",
+    "bazirkname": "Bezirk Horgen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 107,
+    "nr": 151,
+    "name": "Erlenbach (ZH)",
+    "bazirkname": "Bezirk Meilen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 107,
+    "nr": 152,
+    "name": "Herrliberg",
+    "bazirkname": "Bezirk Meilen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 107,
+    "nr": 153,
+    "name": "Hombrechtikon",
+    "bazirkname": "Bezirk Meilen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 107,
+    "nr": 154,
+    "name": "Küsnacht (ZH)",
+    "bazirkname": "Bezirk Meilen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 107,
+    "nr": 155,
+    "name": "Männedorf",
+    "bazirkname": "Bezirk Meilen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 107,
+    "nr": 156,
+    "name": "Meilen",
+    "bazirkname": "Bezirk Meilen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 107,
+    "nr": 157,
+    "name": "Oetwil am See",
+    "bazirkname": "Bezirk Meilen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 107,
+    "nr": 158,
+    "name": "Stäfa",
+    "bazirkname": "Bezirk Meilen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 107,
+    "nr": 159,
+    "name": "Uetikon am See",
+    "bazirkname": "Bezirk Meilen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 107,
+    "nr": 160,
+    "name": "Zumikon",
+    "bazirkname": "Bezirk Meilen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 107,
+    "nr": 161,
+    "name": "Zollikon",
+    "bazirkname": "Bezirk Meilen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 108,
+    "nr": 172,
+    "name": "Fehraltorf",
+    "bazirkname": "Bezirk Pfäffikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 108,
+    "nr": 173,
+    "name": "Hittnau",
+    "bazirkname": "Bezirk Pfäffikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 108,
+    "nr": 176,
+    "name": "Lindau",
+    "bazirkname": "Bezirk Pfäffikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 108,
+    "nr": 177,
+    "name": "Pfäffikon",
+    "bazirkname": "Bezirk Pfäffikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 108,
+    "nr": 178,
+    "name": "Russikon",
+    "bazirkname": "Bezirk Pfäffikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 108,
+    "nr": 180,
+    "name": "Weisslingen",
+    "bazirkname": "Bezirk Pfäffikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 108,
+    "nr": 181,
+    "name": "Wila",
+    "bazirkname": "Bezirk Pfäffikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 108,
+    "nr": 182,
+    "name": "Wildberg",
+    "bazirkname": "Bezirk Pfäffikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 109,
+    "nr": 191,
+    "name": "Dübendorf",
+    "bazirkname": "Bezirk Uster",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 109,
+    "nr": 192,
+    "name": "Egg",
+    "bazirkname": "Bezirk Uster",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 109,
+    "nr": 193,
+    "name": "Fällanden",
+    "bazirkname": "Bezirk Uster",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 109,
+    "nr": 194,
+    "name": "Greifensee",
+    "bazirkname": "Bezirk Uster",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 109,
+    "nr": 195,
+    "name": "Maur",
+    "bazirkname": "Bezirk Uster",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 109,
+    "nr": 196,
+    "name": "Mönchaltorf",
+    "bazirkname": "Bezirk Uster",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 109,
+    "nr": 197,
+    "name": "Schwerzenbach",
+    "bazirkname": "Bezirk Uster",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 109,
+    "nr": 198,
+    "name": "Uster",
+    "bazirkname": "Bezirk Uster",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 109,
+    "nr": 199,
+    "name": "Volketswil",
+    "bazirkname": "Bezirk Uster",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 109,
+    "nr": 200,
+    "name": "Wangen-Brüttisellen",
+    "bazirkname": "Bezirk Uster",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 110,
+    "nr": 211,
+    "name": "Altikon",
+    "bazirkname": "Bezirk Winterthur",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 110,
+    "nr": 213,
+    "name": "Brütten",
+    "bazirkname": "Bezirk Winterthur",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 110,
+    "nr": 214,
+    "name": "Dägerlen",
+    "bazirkname": "Bezirk Winterthur",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 110,
+    "nr": 215,
+    "name": "Dättlikon",
+    "bazirkname": "Bezirk Winterthur",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 110,
+    "nr": 216,
+    "name": "Dinhard",
+    "bazirkname": "Bezirk Winterthur",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 110,
+    "nr": 218,
+    "name": "Ellikon an der Thur",
+    "bazirkname": "Bezirk Winterthur",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 110,
+    "nr": 219,
+    "name": "Elsau",
+    "bazirkname": "Bezirk Winterthur",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 110,
+    "nr": 220,
+    "name": "Hagenbuch",
+    "bazirkname": "Bezirk Winterthur",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 110,
+    "nr": 221,
+    "name": "Hettlingen",
+    "bazirkname": "Bezirk Winterthur",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 110,
+    "nr": 223,
+    "name": "Neftenbach",
+    "bazirkname": "Bezirk Winterthur",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 110,
+    "nr": 224,
+    "name": "Pfungen",
+    "bazirkname": "Bezirk Winterthur",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 110,
+    "nr": 225,
+    "name": "Rickenbach (ZH)",
+    "bazirkname": "Bezirk Winterthur",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 110,
+    "nr": 226,
+    "name": "Schlatt (ZH)",
+    "bazirkname": "Bezirk Winterthur",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 110,
+    "nr": 227,
+    "name": "Seuzach",
+    "bazirkname": "Bezirk Winterthur",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 110,
+    "nr": 228,
+    "name": "Turbenthal",
+    "bazirkname": "Bezirk Winterthur",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 110,
+    "nr": 230,
+    "name": "Winterthur",
+    "bazirkname": "Bezirk Winterthur",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 110,
+    "nr": 231,
+    "name": "Zell (ZH)",
+    "bazirkname": "Bezirk Winterthur",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 111,
+    "nr": 241,
+    "name": "Aesch (ZH)",
+    "bazirkname": "Bezirk Dietikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 111,
+    "nr": 242,
+    "name": "Birmensdorf (ZH)",
+    "bazirkname": "Bezirk Dietikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 111,
+    "nr": 243,
+    "name": "Dietikon",
+    "bazirkname": "Bezirk Dietikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 111,
+    "nr": 244,
+    "name": "Geroldswil",
+    "bazirkname": "Bezirk Dietikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 111,
+    "nr": 245,
+    "name": "Oberengstringen",
+    "bazirkname": "Bezirk Dietikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 111,
+    "nr": 246,
+    "name": "Oetwil an der Limmat",
+    "bazirkname": "Bezirk Dietikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 111,
+    "nr": 247,
+    "name": "Schlieren",
+    "bazirkname": "Bezirk Dietikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 111,
+    "nr": 248,
+    "name": "Uitikon",
+    "bazirkname": "Bezirk Dietikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 111,
+    "nr": 249,
+    "name": "Unterengstringen",
+    "bazirkname": "Bezirk Dietikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 111,
+    "nr": 250,
+    "name": "Urdorf",
+    "bazirkname": "Bezirk Dietikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 111,
+    "nr": 251,
+    "name": "Weiningen (ZH)",
+    "bazirkname": "Bezirk Dietikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 112,
+    "nr": 261,
+    "name": "Zürich",
+    "bazirkname": "Bezirk Zürich",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 102,
+    "nr": 292,
+    "name": "Stammheim",
+    "bazirkname": "Bezirk Andelfingen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 106,
+    "nr": 293,
+    "name": "Wädenswil",
+    "bazirkname": "Bezirk Horgen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 110,
+    "nr": 294,
+    "name": "Elgg",
+    "bazirkname": "Bezirk Winterthur",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 106,
+    "nr": 295,
+    "name": "Horgen",
+    "bazirkname": "Bezirk Horgen",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 108,
+    "nr": 296,
+    "name": "Illnau-Effretikon",
+    "bazirkname": "Bezirk Pfäffikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 108,
+    "nr": 297,
+    "name": "Bauma",
+    "bazirkname": "Bezirk Pfäffikon",
+    "kantonname": "Zürich"
+  },
+  {
+    "kant": "ZH",
+    "bezirk": 110,
+    "nr": 298,
+    "name": "Wiesendangen",
+    "bazirkname": "Bezirk Winterthur",
+    "kantonname": "Zürich"
+  }
+]

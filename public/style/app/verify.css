@@ -1,0 +1,21 @@
+.form-group {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+}
+
+.form-group:last-child{margin-bottom: 0;}
+
+.form-group label {
+    display: block;
+    text-align: start;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    padding-bottom: 00.25rem;
+}
