@@ -1,16 +1,23 @@
 <?php
 
 function findGemeinde($id) {
-    $gemeinden = json_decode(file_get_contents(__DIR__ . "/data/gemeinden.json"), true);
+    $gemeinden = json_decode(file_get_contents(__DIR__ . "/data/gemeinden/gemeinden.json"), true);
     if (gettype($id) == "integer") {
-        return array_values(array_filter($gemeinden, function($gemeinde) use($id){
-            return $gemeinde["nr"] == $id;
-        }))[0];
+        $gemeinde = array_values(array_filter($gemeinden, function($gemeinde) use($id){
+            return $gemeinde["gde_nr"] == $id;
+        }));
+        if (!$gemeinde) {
+            $gemeinde = array_values(array_filter($gemeinden, function($gemeinde) use($id){
+                return in_array($id, $gemeinde["plz_array"]);
+            }));
+        }
     } else if (gettype($id) == "string") {
-        return array_values(array_filter($gemeinden, function($gemeinde) use($id){
-            return $gemeinde["name"] == $id;
-        }))[0];
+        $gemeinde = array_values(array_filter($gemeinden, function($gemeinde) use($id){
+            return $gemeinde["gde_name"] == $id;
+        }));
     }
+
+    return $gemeinde[0];
 }
 
 function findParty($slug) {

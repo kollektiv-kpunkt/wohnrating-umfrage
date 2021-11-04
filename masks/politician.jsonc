@@ -5,6 +5,7 @@
         "lname":"Last Name"
     },
     "email":"Email Addres",
+    "beruf": "Job title",
     "partei":"party", // Can be sp, svp, gruene, fdp, glp, mitte, bdp, cvp, evp, undefined (for politicians without a party) or a string containing the full name of some other party
     "gemeinde":261,
     "contactStatus":0 // Is 0 if contact Information has not been confirmed, is 1 if it has

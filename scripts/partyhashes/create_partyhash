@@ -1,0 +1,26 @@
+<?php
+
+$parties = [
+    "sp",
+    "svp",
+    "gruene",
+    "fdp",
+    "glp",
+    "cvp",
+    "bdp",
+    "mitte",
+    "evp"
+];
+
+$file = fopen('partyhashes.csv', 'w');
+fputcsv($file, array('hash_ID', 'hash_party', 'hash_code'));
+
+for ($x = 0; $x < count($parties); $x++) {
+    $hash = hash("sha3-224", rand(5000, 10000));
+    fputcsv($file, array($x + 1, $parties[$x], $hash));
+}
+
+fclose($file);
+
+
+?>

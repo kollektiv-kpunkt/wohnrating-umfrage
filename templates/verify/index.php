@@ -21,7 +21,7 @@ require_once __DIR__ . "/../partials/header.php";
             </div>
             <div class="form-group">
                 <label for="gemeinde">Gemeinde</label>
-                <input type="text" name="gemeinde" id="gemeinde" value="<?= findGemeinde($contact["gemeinde"])["name"] ?>" required>
+                <input type="text" name="gemeinde" id="gemeinde" value="<?= findGemeinde($contact["gemeinde"])["gde_name"] ?>" required>
             </div>
             <div class="form-group">
                 <label for="Partei">Partei</label>
