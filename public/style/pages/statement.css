@@ -1,0 +1,11 @@
+#statement {
+    resize: vertical;
+    min-height: 12rem;
+}
+
+#counter {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: #8f8f8f
+}

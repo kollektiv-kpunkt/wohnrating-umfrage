@@ -1,17 +1,19 @@
 <?php
 
 function findGemeinde($id) {
+    if ($id == NULL) {
+        return;
+    }
     $gemeinden = json_decode(file_get_contents(__DIR__ . "/data/gemeinden/gemeinden.json"), true);
-    if (gettype($id) == "integer") {
+    $gemeinde = array_values(array_filter($gemeinden, function($gemeinde) use($id){
+        return $gemeinde["gde_nr"] == $id;
+    }));
+    if (!$gemeinde) {
         $gemeinde = array_values(array_filter($gemeinden, function($gemeinde) use($id){
-            return $gemeinde["gde_nr"] == $id;
+            return in_array($id, $gemeinde["plz_array"]);
         }));
-        if (!$gemeinde) {
-            $gemeinde = array_values(array_filter($gemeinden, function($gemeinde) use($id){
-                return in_array($id, $gemeinde["plz_array"]);
-            }));
-        }
-    } else if (gettype($id) == "string") {
+    }
+    if (!$gemeinde) {
         $gemeinde = array_values(array_filter($gemeinden, function($gemeinde) use($id){
             return $gemeinde["gde_name"] == $id;
         }));

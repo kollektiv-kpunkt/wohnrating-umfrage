@@ -2,117 +2,144 @@
 use Pecee\SimpleRouter\SimpleRouter as Router;
 
 include __DIR__ . "/../config/config.inc.php";
-
 include __DIR__ . "/../functions.php";
+include __DIR__ . "/../controllers/politician.php";
 
 Router::get('/', function() {
+    global $config;
+    global $page;
+    $page = [
+        "title" => "Jetzt mitmachen!"
+    ];
     include_once __DIR__ . "/../templates/umfrage/index.php";
     exit;
 });
 
-Router::get('/danke', function() {
-    include_once __DIR__ . "/../templates/umfrage/danke.php";
-    exit;
-});
+Router::get("/registrieren/{politicianId}", function($politicianId){
+    $politician = new Politician;
+    $politician->new($politician, $politicianId);
 
-Router::get('/umfrage/{politId}', function($politId) {
-    global $conn;
-    $stmt = $conn->prepare("SELECT * from `politicians` WHERE `politician_UUID` = ?;");
-    $stmt->bind_param("s", $politId);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    if ($result->num_rows == 0) {
-        header("Location: /");
-        exit;
-    }
-    $politician = $result->fetch_assoc();
-    $contact = json_decode($politician["politician_info"]);
-    if ($contact->contactStatus == 0) {
-        header("Location: /verify/{$politId}");
-        exit;
-    }
-
-    include_once __DIR__ . "/../templates/umfrage/form.php";
-    exit;
-});
-
-
-Router::get('/verify/{politId}', function($politId) {
-    global $conn;
-    $stmt = $conn->prepare("SELECT * from `politicians` WHERE `politician_UUID` = ?;");
-    $stmt->bind_param("s", $politId);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    if ($result->num_rows == 0) {
-        header("Location: /");
-        exit;
-    }
-    $politician = $result->fetch_assoc();
-    $contact = json_decode($politician["politician_info"], true);
-
-    include_once __DIR__ . "/../templates/verify/index.php";
-    exit;
-});
-
-
-// POST REQUESTS
-
-Router::post("/umfrage/submit", function() {
-    header("Content-Type: application/json");
-    $response = json_decode(file_get_contents('php://input'), true);
-    $answers = json_encode($response["questions"]);
-    global $conn;
-    $stmt = $conn->prepare("UPDATE `politicians` SET `politician_answers` = ? WHERE `politician_UUID` = ?;");
-    $stmt->bind_param("ss", $answers, $response["politId"]);
-    $resultSQL = $stmt->execute();
-    if ($resultSQL != 1) {
-        $response = [
-            "code" => 500.1,
-            "type" => "error",
-            "text" => "Something went wrong (DB Failed)"
-        ];
-        echo(json_encode($response));
-        exit;
-    }
-    $response = [
-        "code" => 200,
-        "type" => "success"
+    global $config;
+    global $page;
+    $page = [
+        "title" => "Registration"
     ];
-    echo(json_encode($response));
+    include_once __DIR__ . "/../templates/umfrage/register.php";
+    exit;
 });
 
-Router::post("/verify", function(){
-    header("Content-Type: application/json");
-    $contact = array();
-    parse_str(json_decode($_POST["contact"]), $contact);
-    $politician = json_encode([
-        "ID" => uniqid(),
-        "name" => [
-            "fname"=>$contact["fname"],
-            "lname"=>$contact["lname"]
-        ],
-        "email" => $contact["email"],
-        "partei" => findParty($contact["partei"])["slug"],
-        "gemeinde" => findGemeinde($contact["gemeinde"])["nr"],
-        "contactStatus" => 1
-    ]);
-
-    global $conn;
-    $stmt = $conn->prepare("UPDATE `politicians` SET `politician_info` = ? WHERE `politician_UUID` = ?;");
-    $stmt->bind_param("ss", $politician, $_POST["politId"]);
-    $resultSQL = $stmt->execute();
-    if ($resultSQL != 1) {
-        $response = [
-            "code" => 500.1,
-            "type" => "error",
-            "text" => "Something went wrong (DB Failed)"
-        ];
-        echo(json_encode($response));
-        exit;
-    }
-    $response = [
-        "code" => 200,
-        "type" => "success"
+Router::get("/foto/{politicianId}", function($politicianId){
+    $politician = new Politician;
+    $politician->get($politicianId);
+    global $config;
+    global $page;
+    $page = [
+        "title" => "Foto hochladen"
     ];
-    echo(json_encode($response));
+    include_once __DIR__ . "/../templates/umfrage/picture.php";
+    exit;
+});
+
+Router::get("/umfrage/{hash}", function($hash){
+    $politician = new Politician;
+    $politician = $politician->get_from_hash($hash);
+    global $config;
+    global $page;
+    $page = [
+        "title" => "Umfrage"
+    ];
+    include_once __DIR__ . "/../templates/umfrage/umfrage.php";
+    exit;
+});
+
+Router::get("/statement/{politicianId}", function($politicianId){
+    $politician = new Politician;
+    $politician = $politician->get($politicianId);
+    global $config;
+    global $page;
+    $page = [
+        "title" => "Ihr statement"
+    ];
+    include_once __DIR__ . "/../templates/umfrage/statement.php";
+    exit;
+});
+
+Router::get("/danke/{politicianId}", function($politicianId){
+    $politician = new Politician;
+    $politician = $politician->get($politicianId);
+    $politician->send_confirmation();
+    global $config;
+    global $page;
+    $page = [
+        "title" => "Danke!"
+    ];
+    include_once __DIR__ . "/../templates/umfrage/thx.php";
+    exit;
+});
+
+Router::get("/confirm/{politicianId}", function($politicianId){
+    $politician = new Politician;
+    $politician = $politician->get($politicianId);
+    $politician->status = 1;
+    $politician->update();
+    global $config;
+    global $page;
+    $page = [
+        "title" => "E-Mail Adresse bestätigt!"
+    ];
+    include_once __DIR__ . "/../templates/umfrage/confirmed.php";
+    exit;
+});
+
+
+Router::post("/register", function(){
+    header("Content-type: application/json");
+    $politician = new Politician;
+    $politician->register($_POST);
+});
+
+Router::post("/picture-upload/{politicianId}", function($politicianId){
+    header("Content-type: application/json");
+    $politician = new Politician;
+    $politician->upload_image($politicianId, $_FILES);
+});
+
+Router::post("/questionaire", function(){
+    header("Content-type: application/json");
+    $politician = new Politician;
+    $politician = $politician->get($_POST["uuid"]);
+    $politician->antworten = serialize($_POST["answers"]);
+    if ($politician->update() == 200) {
+        $return = [
+            "code" => 200,
+            "next" => "/statement/{$politician->uuid}"
+        ];
+        echo(json_encode($return));
+    } else {
+        $return = [
+            "type" => "error",
+            "msg" => "Es ist ein unerwarteter Fehler aufgetreten. Bitte versuchen Sie es später nochmals!"
+        ];
+        echo(json_encode($return));
+    };
+});
+
+Router::post("/statement", function(){
+    header("Content-type: application/json");
+    $politician = new Politician;
+    $politician = $politician->get($_POST["uuid"]);
+    $politician->statement = $_POST["statement"];
+    if ($politician->update() == 200) {
+        $return = [
+            "code" => 200,
+            "next" => "/danke/{$politician->uuid}"
+        ];
+        echo(json_encode($return));
+    } else {
+        $return = [
+            "type" => "error",
+            "msg" => "Es ist ein unerwarteter Fehler aufgetreten. Bitte versuchen Sie es später nochmals!"
+        ];
+        echo(json_encode($return));
+    };
 });

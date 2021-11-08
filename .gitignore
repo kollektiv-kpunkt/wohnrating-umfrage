@@ -6,3 +6,6 @@ composer.phar
 # composer.lock
 
 *.inc.*
+*partyhashes*
+*public/uploads/*
+!public/uploads/.gitkeep

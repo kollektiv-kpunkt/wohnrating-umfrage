@@ -1,0 +1,46 @@
+.question {
+    margin-top: 4rem;
+    text-align: start;
+}
+
+#questionaire {
+    text-align: end;
+}
+
+.question:nth-of-type(1){margin-top: 2rem;}
+
+.question .question-title {
+    font-size: 1.22222rem;
+}
+
+.question .answers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.answer {
+    height: 0;
+    width: 0;
+    display: flex;
+}
+
+@media screen and (max-width: 780px) {
+    .question .answers {
+        margin-top: 0.75rem;
+    }
+    .question .answers .radio-group {
+        min-width: calc(50% - 0.5rem);
+        margin-top: 0.75rem;
+    }
+}
+
+.answer+label::before {
+    font-family: "FontAwesome";
+    content: "\f111";
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.answer:checked+label::before {content: "\f058";}
+.answer:checked+label {color: var(--accent);}

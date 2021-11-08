@@ -1,5 +1,6 @@
 {
     "require": {
-        "pecee/simple-router": "4.3.6.1"
+        "pecee/simple-router": "4.3.6.1",
+        "phpmailer/phpmailer": "^6.5"
     }
 }

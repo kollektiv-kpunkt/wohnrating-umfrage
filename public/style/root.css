@@ -1,9 +1,9 @@
 :root {
-    --black: #232323;
+    --black: #000000;
     --white: #f6f6f6;
-    --grey: #9c9c9c;
+    --accent: #963030;
 }
 
 html {
-    overflow-x: hidden;
+    background-color: var(--white);
 }

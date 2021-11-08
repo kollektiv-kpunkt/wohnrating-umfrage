@@ -1,0 +1,22 @@
+nav.main-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f6f6f691;
+    -moz-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: 100%;
+}
+
+nav.main-nav img {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    height: auto;
+}
+
+nav.main-nav a {
+    display: flex;
+    max-width: 60%;
+    margin: auto;   
+}

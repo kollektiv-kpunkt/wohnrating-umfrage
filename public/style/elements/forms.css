@@ -1,0 +1,60 @@
+form.grid-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: start;
+}
+
+form.grid-form .form-group {
+    margin-top: 1rem;
+    width: calc(50% - 0.5rem);
+}
+
+@media screen and (max-width: 780px) {
+    form.grid-form .form-group {width: 100%;}
+}
+
+form.grid-form .form-group.fullwidth {
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 1.2222rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid var(--black);
+    padding: 0.55rem;
+    border-radius: 0;
+    background-color: var(--white);
+}
+
+.form-group .select2-container {width: 100% !important;}
+
+.form-group .select2-container .select2-selection--single {
+    height: unset;
+    border: 2px solid var(--black);
+    border-radius: 0;
+    background-color: var(--white);
+}
+
+.form-group .select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding: 0.54rem;
+    color: unset;
+    line-height: 1.25;
+    box-sizing: border-box;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 2.3rem;
+}
+
+form.grid-form button[type="submit"] {
+    width: calc(50% - 0.5rem); 
+    margin-left: auto
+}

@@ -1,20 +1,14 @@
 <?php
-require_once __DIR__ . "/../partials/header.php";
+include __DIR__ . "/../partials/header.php";
 ?>
 
-
-<div class="card-container">
-    <div class="card-inner">
-        <h1>Machen Sie mit beim Wohnrating!</h1>
-        <p>Felis adipiscing et tristique vel ut lobortis. Habitant arcu eget non egestas maecenas mi. Diam est tristique dictum arcu. Risus, molestie eget auctor nullam tellus libero.</p>
-        <p><strong>A, faucibus id imperdiet sit sed tortor praesent. Netus orci fermentum fringilla vestibulum auctor id in vel nisl.</strong></p>
-        <div class="btngroup mt5">
-            <a href="#" class="button">Registrieren</a>
-        </div>
-    </div>
+<div class="app-inner">
+    <h1>Machen Sie mit beim Wohnrating!</h1>
+    <p class="lead">Eine der zentralen Politikfelder auf der kommunalen Ebene ist die Wohn- und Bodenpolitik. Wesentliche Fragen rund um das Thema Wohnen werden in den Gemeinden geklärt. Dabei stellen sich einige Fragen: Soll sich die eigene Stadt vermehrt für gemeinnützigen Wohnungsbau engagieren? Soll sie mehr Wohnfläche kaufen, wenn diese zum Verkauf steht? Und wie sollen sich die Gemeinden im Bereich des privaten Wohnbaus verhalten? All diesen Fragen können Sie sich im Wohnrating der Wohnbaugenossenschaften und des Mieter:innenverbandes stellen!</p>
+    <a href="/registrieren/<?= uniqid("politician_") ?>" class="button mt4">Registrieren</a>
 </div>
 
 
 <?php
-require_once __DIR__ . "/../partials/footer.php";
+include __DIR__ . "/../partials/footer.php";
 ?>
