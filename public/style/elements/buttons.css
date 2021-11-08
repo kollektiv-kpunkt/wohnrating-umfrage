@@ -20,4 +20,4 @@
     cursor: pointer;
 }
 
-.button:hover{--btnbgcolor: var(--accent);}
+.button:hover, .button:focus{--btnbgcolor: var(--accent);}

@@ -36,11 +36,11 @@ $questions = [
                 </div>
                 <div class="radio-group">
                     <input type="radio" name="answers[<?=$i?>]" id="answer<?= $i ?>-3" value="3" class="answer">
-                    <label for="answer<?= $i ?>-3">Nein</label>
+                    <label for="answer<?= $i ?>-3">Eher Nein</label>
                 </div>
                 <div class="radio-group">
                     <input type="radio" name="answers[<?=$i?>]" id="answer<?= $i ?>-4" value="4" class="answer">
-                    <label for="answer<?= $i ?>-4">Eher Nein</label>
+                    <label for="answer<?= $i ?>-4">Nein</label>
                 </div>
             </div>
             <div class="radio-group mt5">

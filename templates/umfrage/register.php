@@ -38,7 +38,7 @@ include __DIR__ . "/../partials/header.php";
         <div class="form-group fullwidth">
             <label for="partycode">Partei Code</label>
             <input type="password" id="partycode" name="partycode" required>
-            <small class="helper mt3" style="display: block">Der Partei-Code dient zur Verifizierung ihrer Registration. Sie erhalten den Code von den zuständigen Personen in Ihrem Parteisekretariat. Sollte Ihnen kein solcher Code zur Verfügung stellen, obwohl sie in einer der Zürcher Parlamentsgemeinden zur Wahl stellen, kontaktieren Sie uns bitte <a href="mailto:info@wohnrating.ch">hier.</a></small>
+            <small class="helper mt3" style="display: block">Der Partei-Code dient zur Verifizierung ihrer Registration. Sie erhalten den Code von den zuständigen Personen in Ihrem Parteisekretariat. Sollte Ihnen kein solcher Code zur Verfügung stellen, obwohl sie in einer der Zürcher Parlamentsgemeinden zur Wahl stellen, kontaktieren Sie uns bitte <a href="mailto:info@wohnrating.ch" tabindex="-1">hier.</a></small>
         </div>
         <div class="form-group fullwidth">
             <label for="gemeinde">Gemeinde</label>
@@ -66,6 +66,21 @@ include __DIR__ . "/../partials/header.php";
 <script>
 $(document).ready(function() {
     $('.select2').select2();
+});
+
+$(document).on('focus', '.select2-selection.select2-selection--single', function (e) {
+  $(this).closest(".select2-container").siblings('select:enabled').select2('open');
+});
+
+// steal focus during close - only capture once and stop propogation
+$('select.select2').on('select2:closing', function (e) {
+  $(e.target).data("select2").$selection.one('focus focusin', function (e) {
+    e.stopPropagation();
+  });
+});
+
+$(document).on('select2:open', () => {
+    document.querySelector('.select2-search__field').focus();
 });
 
 $(document).on("submit", "#personal-details", function(e){

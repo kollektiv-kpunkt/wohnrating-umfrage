@@ -1,4 +1,4 @@
-@import url("fonts/fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 html {font-size: 112.5%;} /*18px*/
 
@@ -6,9 +6,9 @@ html {font-size: 112.5%;} /*18px*/
 @media screen and (max-width: 780px) {html {font-size: 87.5%;} /*14px*/}
 
 body {
-  font-family: 'SpaceGrotesk', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 p {
@@ -19,8 +19,8 @@ p {
 h1, h2, h3, h4, h5 {
   margin: 0;
   margin-bottom: max(0.42em, 1rem);
-  font-family: 'SpaceGrotesk', sans-serif;
-  font-weight: 600;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
   line-height: 1.05;
 }
 
