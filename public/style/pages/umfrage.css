@@ -1,6 +1,9 @@
 .question {
-    margin-top: 4rem;
+    margin-top: 3rem;
     text-align: start;
+    padding: 1.5rem;
+    background-color: white;
+    border: 2px solid var(--black);
 }
 
 #questionaire {
@@ -34,6 +37,8 @@
         margin-top: 0.75rem;
     }
 }
+
+.radio-group label {cursor: pointer;}
 
 .answer+label::before {
     font-family: "FontAwesome";
