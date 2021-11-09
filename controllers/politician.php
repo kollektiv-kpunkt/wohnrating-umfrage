@@ -154,9 +154,44 @@ class Politician {
         if ($politician->update() == 200){
             echo(json_encode([
                 "code" => 200,
-                "next" => "/umfrage/{$politician->hash}"
+                "next" => "/email/{$politician->uuid}"
             ]));
         };
+    }
+
+    public function send_link() {
+        global $config;
+        $mail = new PHPMailer(true);
+        $mail->CharSet = 'UTF-8';
+
+        try {
+            //Server settings
+            // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+            $mail->isSMTP();                                            //Send using SMTP
+            $mail->Host       = 'victorinus.metanet.ch';                     //Set the SMTP server to send through
+            $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+            $mail->Username   = $config["email"]["user"];                     //SMTP username
+            $mail->Password   = $config["email"]["pw"];                               //SMTP password
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+            $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+            //Recipients
+            $mail->setFrom($config["email"]["user"], $config["email"]["from"]);
+            $mail->addAddress($this->email, "{$this->name["fname"]} {$this->name["lname"]}");     //Add a recipient
+
+            //Content
+            $mail->isHTML(true);                                  //Set email format to HTML
+            $mail->Subject = "Ihr Link zur Umfrage, {$this->name["fname"]} {$this->name["lname"]}!";
+            $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER["HTTP_HOST"];
+            $msgbody = str_replace(["{{FNAME}}", "{{LNAME}}", "{{PARTICIPATE LINK}}"], [$this->name["fname"], $this->name["lname"], $actual_link . "/umfrage/{$this->hash}"], file_get_contents(__DIR__ . "/../templates/emails/link.html"));
+            $mail->Body    = $msgbody;
+
+            if (!$mail->send()){
+                die("Unable to send confirmation E-Mail");
+            };
+        } catch (Exception $e) {
+            die("Unable to send confirmation E-Mail");
+        }
     }
 
     public function send_confirmation() {
@@ -182,8 +217,7 @@ class Politician {
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
             $mail->Subject = "Danke für Ihre Unterstützung, {$this->name["fname"]} {$this->name["lname"]}!";
-            $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER["HTTP_HOST"];
-            $msgbody = str_replace(["{{FNAME}}", "{{LNAME}}", "{{CONFIRM LINK}}"], [$this->name["fname"], $this->name["lname"], $actual_link . "/confirm/{$this->uuid}"], file_get_contents(__DIR__ . "/../templates/emails/confirmation.html"));
+            $msgbody = str_replace(["{{FNAME}}", "{{LNAME}}"], [$this->name["fname"], $this->name["lname"]], file_get_contents(__DIR__ . "/../templates/emails/confirmation.html"));
             $mail->Body    = $msgbody;
 
             if (!$mail->send()){

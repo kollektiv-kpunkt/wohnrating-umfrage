@@ -40,6 +40,19 @@ Router::get("/foto/{politicianId}", function($politicianId){
     exit;
 });
 
+Router::get("/email/{politicianId}", function($politicianId){
+    $politician = new Politician;
+    $politician = $politician->get($politicianId);
+    $politician->send_link();
+    global $config;
+    global $page;
+    $page = [
+        "title" => "E-Mail Adresse bestätigen"
+    ];
+    include_once __DIR__ . "/../templates/umfrage/confirm_email.php";
+    exit;
+});
+
 Router::get("/umfrage/{hash}", function($hash){
     $politician = new Politician;
     $politician = $politician->get_from_hash($hash);

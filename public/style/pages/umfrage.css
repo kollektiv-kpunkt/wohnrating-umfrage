@@ -1,7 +1,12 @@
 .question {
-    margin-top: 4rem;
+    margin-top: 3rem;
     text-align: start;
+    padding: 1.5rem;
+    background-color: white;
+    border: 2px solid var(--black);
 }
+
+.radio-group label {cursor: pointer;}
 
 #questionaire {
     text-align: end;
