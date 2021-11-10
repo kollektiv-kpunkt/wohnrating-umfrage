@@ -24,10 +24,13 @@ for ($x = 0; $x < count($parties); $x++) {
     $conn->query("INSERT into `partyhashes` (`hash_ID`, `hash_party`, `hash_code`) VALUES ({$i}, '{$parties[$x]}', '{$hash}');");
 }
 
-$i = $x+1;
-fputcsv($file, array($i, "testing", 1));
-$conn->query("INSERT into `partyhashes` (`hash_ID`, `hash_party`, `hash_code`) VALUES ({$i}, 'testing', 1);");
-fclose($file);
+if (getopt("d::") == true) {
+    $i = $x+1;
+    fputcsv($file, array($i, "testing", 1));
+    $conn->query("INSERT into `partyhashes` (`hash_ID`, `hash_party`, `hash_code`) VALUES ({$i}, 'testing', 1);");
+    fclose($file);
+}
+
 
 
 ?>
