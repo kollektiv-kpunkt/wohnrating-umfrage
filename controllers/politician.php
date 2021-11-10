@@ -227,4 +227,20 @@ class Politician {
             die("Unable to send confirmation E-Mail");
         }
     }
+
+    // Status
+
+    public function set_status($step) {
+        $this->status = $step;
+        $this->update();
+    }
+    
+    public function check_status($step) {
+        if ($this->status == $step) {
+            return;
+        } else {
+            var_dump($this);
+            die("Seomthing went wrong, please start over.");
+        }
+    }
 }

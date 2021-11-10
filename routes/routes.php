@@ -18,25 +18,28 @@ Router::get('/', function() {
 Router::get("/registrieren/{politicianId}", function($politicianId){
     $politician = new Politician;
     $politician->new($politician, $politicianId);
-
+    
     global $config;
     global $page;
     $page = [
         "title" => "Registration"
     ];
     include_once __DIR__ . "/../templates/umfrage/register.php";
+    $politician->set_status(1);
     exit;
 });
 
 Router::get("/foto/{politicianId}", function($politicianId){
     $politician = new Politician;
-    $politician->get($politicianId);
+    $politician = $politician->get($politicianId);
+    $politician->check_status(1);
     global $config;
     global $page;
     $page = [
         "title" => "Foto hochladen"
     ];
     include_once __DIR__ . "/../templates/umfrage/picture.php";
+    $politician->set_status(2);
     exit;
 });
 
@@ -44,36 +47,42 @@ Router::get("/email/{politicianId}", function($politicianId){
     $politician = new Politician;
     $politician = $politician->get($politicianId);
     $politician->send_link();
+    $politician->check_status(2);
     global $config;
     global $page;
     $page = [
         "title" => "E-Mail Adresse bestätigen"
     ];
     include_once __DIR__ . "/../templates/umfrage/confirm_email.php";
+    $politician->set_status(3);
     exit;
 });
 
 Router::get("/umfrage/{hash}", function($hash){
     $politician = new Politician;
     $politician = $politician->get_from_hash($hash);
+    $politician->check_status(3);
     global $config;
     global $page;
     $page = [
         "title" => "Umfrage"
     ];
     include_once __DIR__ . "/../templates/umfrage/umfrage.php";
+    $politician->set_status(4);
     exit;
 });
 
 Router::get("/statement/{politicianId}", function($politicianId){
     $politician = new Politician;
     $politician = $politician->get($politicianId);
+    $politician->check_status(4);
     global $config;
     global $page;
     $page = [
         "title" => "Ihr statement"
     ];
     include_once __DIR__ . "/../templates/umfrage/statement.php";
+    $politician->set_status(5);
     exit;
 });
 
@@ -81,12 +90,14 @@ Router::get("/danke/{politicianId}", function($politicianId){
     $politician = new Politician;
     $politician = $politician->get($politicianId);
     $politician->send_confirmation();
+    $politician->check_status(5);
     global $config;
     global $page;
     $page = [
         "title" => "Danke!"
     ];
     include_once __DIR__ . "/../templates/umfrage/thx.php";
+    $politician->set_status("done");
     exit;
 });
 
