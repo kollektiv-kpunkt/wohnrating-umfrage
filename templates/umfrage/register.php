@@ -38,7 +38,7 @@ include __DIR__ . "/../partials/header.php";
         <div class="form-group fullwidth">
             <label for="partycode">Partei Code</label>
             <input type="password" id="partycode" name="partycode" required>
-            <small class="helper mt3" style="display: block">Der Partei-Code dient zur Verifizierung ihrer Registration. Sie erhalten den Code von den zuständigen Personen in Ihrem Parteisekretariat. Sollte Ihnen kein solcher Code zur Verfügung stellen, obwohl sie in einer der Zürcher Parlamentsgemeinden zur Wahl stellen, kontaktieren Sie uns bitte <a href="mailto:info@wohnrating.ch" tabindex="-1">hier.</a></small>
+            <small class="helper mt3" style="display: block">Der Partei-Code dient zur Verifizierung ihrer Registration. Sollten Sie keinen solchen Code erhalten haben, kontaktieren Sie uns bitte <a href="mailto:parteicodes@wohnrating.ch" tabindex="-1">hier.</a></small>
         </div>
         <div class="form-group fullwidth">
             <label for="gemeinde">Gemeinde</label>

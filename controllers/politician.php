@@ -216,7 +216,7 @@ class Politician {
 
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
-            $mail->Subject = "Danke für Ihre Unterstützung, {$this->name["fname"]} {$this->name["lname"]}!";
+            $mail->Subject = "Danke für Ihre Teilnahme, {$this->name["fname"]} {$this->name["lname"]}!";
             $msgbody = str_replace(["{{FNAME}}", "{{LNAME}}"], [$this->name["fname"], $this->name["lname"]], file_get_contents(__DIR__ . "/../templates/emails/confirmation.html"));
             $mail->Body    = $msgbody;
 

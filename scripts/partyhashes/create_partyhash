@@ -1,35 +1,51 @@
 <?php
-$file = fopen('partyhashes.csv', 'w');
 global $conn;
 require_once __DIR__ . "/../../config/config.inc.php";
 
-$parties = [
-    "sp",
-    "svp",
-    "gruene",
-    "fdp",
-    "glp",
-    "cvp",
-    "bdp",
-    "mitte",
-    "evp"
-];
-
-$conn->query("TRUNCATE TABLE `partyhashes`;");
-
-for ($x = 0; $x < count($parties); $x++) {
-    $hash = hash("sha3-224", rand(5000, 10000));
-    $i = $x+1;
-    fputcsv($file, array($i, $parties[$x], $hash));
-    $conn->query("INSERT into `partyhashes` (`hash_ID`, `hash_party`, `hash_code`) VALUES ({$i}, '{$parties[$x]}', '{$hash}');");
+if (getopt("a::") == true) {
+    $file = fopen('partyhashes.csv', 'a');
+    $hash = hash("crc32b", rand(5000, 10000));
+    $name = getopt("n:")["n"];
+    fputcsv($file, array($name, $hash));
+    $conn->query("INSERT into `partyhashes` (`hash_party`, `hash_code`) VALUES ('{$name}', '{$hash}');");
+} else {
+    $file = fopen('partyhashes.csv', 'w');
+    $parties = [
+        "sp",
+        "al",
+        "svp",
+        "gruene",
+        "fdp",
+        "glp",
+        "cvp",
+        "bdp",
+        "mitte",
+        "evp",
+        "juso",
+        "jf",
+        "jungegruene",
+        "jevp",
+        "jungemitte",
+        "jsvp",
+        "jglp",
+        "parteilos"
+    ];
+    
+    $conn->query("TRUNCATE TABLE `partyhashes`;");
+    
+    for ($x = 0; $x < count($parties); $x++) {
+        $hash = hash("crc32b", rand(5000, 10000));
+        fputcsv($file, array($parties[$x], $hash));
+        $conn->query("INSERT into `partyhashes` (`hash_party`, `hash_code`) VALUES ('{$parties[$x]}', '{$hash}');");
+    }
+    
+    if (getopt("d::") == true) {
+        fputcsv($file, array("testing", 1));
+        $conn->query("INSERT into `partyhashes` (`hash_party`, `hash_code`) VALUES ('testing', 1);");
+    }
 }
 
-if (getopt("d::") == true) {
-    $i = $x+1;
-    fputcsv($file, array($i, "testing", 1));
-    $conn->query("INSERT into `partyhashes` (`hash_ID`, `hash_party`, `hash_code`) VALUES ({$i}, 'testing', 1);");
-    fclose($file);
-}
+fclose($file);
 
 
 
