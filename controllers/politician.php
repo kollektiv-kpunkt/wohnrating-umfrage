@@ -239,7 +239,6 @@ class Politician {
         if ($this->status == $step) {
             return;
         } else {
-            var_dump($this);
             die("Seomthing went wrong, please start over.");
         }
     }
