@@ -1,4 +1,7 @@
 <?php
+$file = fopen('partyhashes.csv', 'w');
+global $conn;
+require_once __DIR__ . "/../../config/config.inc.php";
 
 $parties = [
     "sp",
@@ -12,15 +15,18 @@ $parties = [
     "evp"
 ];
 
-$file = fopen('partyhashes.csv', 'w');
+$conn->query("TRUNCATE TABLE `partyhashes`;");
 
 for ($x = 0; $x < count($parties); $x++) {
     $hash = hash("sha3-224", rand(5000, 10000));
-    fputcsv($file, array($x + 1, $parties[$x], $hash));
+    $i = $x+1;
+    fputcsv($file, array($i, $parties[$x], $hash));
+    $conn->query("INSERT into `partyhashes` (`hash_ID`, `hash_party`, `hash_code`) VALUES ({$i}, '{$parties[$x]}', '{$hash}');");
 }
 
-fputcsv($file, array($x + 1, "testing", 1));
-
+$i = $x+1;
+fputcsv($file, array($i, "testing", 1));
+$conn->query("INSERT into `partyhashes` (`hash_ID`, `hash_party`, `hash_code`) VALUES ({$i}, 'testing', 1);");
 fclose($file);
 
 
