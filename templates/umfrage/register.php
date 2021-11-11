@@ -21,7 +21,7 @@ include __DIR__ . "/../partials/header.php";
         </div>
         <div class="form-group">
             <label for="year">Jahrgang</label>
-            <input type="number" id="year" name="year" required>
+            <input type="number" id="year" name="year" min="1900" max="2004" required>
         </div>
         <div class="form-group">
             <label for="beruf">Berufsbezeichnung</label>

@@ -12,7 +12,7 @@ include __DIR__ . "/../partials/header.php";
         <div id="dz-inner" style="width: 100%; max-width: 520px; margin: auto;">
             <h2>Foto hochladen</h2>
             <p>Ziehen Sie ein Bild hier hinein oder wählen Sie ein Bild von Ihrem Gerät aus.</p>
-            <small style="display: block; color: #8f8f8f">Bitte beachten Sie, dass das Bild danach in ein Quadrat zugeschnitten wern muss.</small>
+            <small style="display: block; color: #8f8f8f">Bitte beachten Sie, dass das Bild danach in ein Quadrat zugeschnitten werden muss.</small>
         </div>
     </form>
 </div>
