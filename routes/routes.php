@@ -31,7 +31,7 @@ Router::get("/registrieren/{politicianId}", function($politicianId){
 Router::get("/foto/{politicianId}", function($politicianId){
     $politician = new Politician;
     $politician = $politician->get($politicianId);
-    $politician->check_status(1);
+    $politician->check_status(3);
     global $config;
     global $page;
     $page = [
@@ -45,7 +45,7 @@ Router::get("/email/{politicianId}", function($politicianId){
     $politician = new Politician;
     $politician = $politician->get($politicianId);
     $politician->send_link();
-    $politician->check_status(2);
+    $politician->check_status(1);
     global $config;
     global $page;
     $page = [
@@ -58,7 +58,7 @@ Router::get("/email/{politicianId}", function($politicianId){
 Router::get("/umfrage/{hash}", function($hash){
     $politician = new Politician;
     $politician = $politician->get_from_hash($hash);
-    $politician->check_status(2);
+    $politician->check_status(1);
     global $config;
     global $page;
     $page = [
@@ -71,7 +71,7 @@ Router::get("/umfrage/{hash}", function($hash){
 Router::get("/statement/{politicianId}", function($politicianId){
     $politician = new Politician;
     $politician = $politician->get($politicianId);
-    $politician->check_status(3);
+    $politician->check_status(2);
     global $config;
     global $page;
     $page = [
@@ -131,7 +131,7 @@ Router::post("/questionaire", function(){
     header("Content-type: application/json");
     $politician = new Politician;
     $politician = $politician->get($_POST["uuid"]);
-    $politician->set_status(3);
+    $politician->set_status(2);
     $politician->antworten = serialize($_POST["answers"]);
     if ($politician->update() == 200) {
         $return = [
@@ -152,12 +152,12 @@ Router::post("/statement", function(){
     header("Content-type: application/json");
     $politician = new Politician;
     $politician = $politician->get($_POST["uuid"]);
-    $politician->set_status(4);
+    $politician->set_status(3);
     $politician->statement = $_POST["statement"];
     if ($politician->update() == 200) {
         $return = [
             "code" => 200,
-            "next" => "/danke/{$politician->uuid}"
+            "next" => "/foto/{$politician->uuid}"
         ];
         echo(json_encode($return));
     } else {

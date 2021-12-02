@@ -89,7 +89,7 @@ class Politician {
             return;
         }
         $return["code"] = 200;
-        $return["next"] = "/foto/{$data["uuid"]}";
+        $return["next"] = "/email/{$politician->uuid}";
         echo(json_encode($return));
     }
 
@@ -150,11 +150,11 @@ class Politician {
         move_uploaded_file($tempFile, dirname(__FILE__) . "/../public/uploads/{$filename}");
 
         $politician->picture = $filename;
-
         if ($politician->update() == 200){
+            $politician->set_status(4);
             echo(json_encode([
                 "code" => 200,
-                "next" => "/email/{$politician->uuid}"
+                "next" => "/danke/{$politician->uuid}"
             ]));
         };
     }

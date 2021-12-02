@@ -14,7 +14,7 @@ include __DIR__ . "/../partials/header.php";
                 <span id="letters">0</span> / 200
             </div>
         </div>
-        <button class="button mt6" type="submit" style="min-width: 50%; margin-left: auto">Abschliessen</button>
+        <button class="button mt6" type="submit" style="min-width: 50%; margin-left: auto">Weiter</button>
     </form>
 </div>
 
